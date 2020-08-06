@@ -1,0 +1,336 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+	margin: 0px auto;
+	width: 100%;
+	background-color: #f9d56e;
+	font-family: 'Merriweather', serif;
+}
+
+nav ul li{
+	list-style-type: none;
+	float: left;
+	padding-right: 2.5em;
+}
+
+nav ul{
+	float: right;
+	color: #f3ecc2;
+}
+
+nav{
+	width: 100% ;
+	height: 50px;
+	background-color: #e8505b;
+	position: fixed;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+ .home{
+ 	background-color: #f9d56e;
+ 	text-align: center;
+ 	display: table;
+ 	font-size: 30px;
+ 	width: 100%;
+ }
+
+ .inner{
+ 	display: table-cell;
+ 	vertical-align: middle;
+ }
+
+ .home .inner img{
+ 	border-radius: 100%; 
+ 	width: 250px;
+ 	height: auto;
+ 	
+ }
+
+ .about{
+ 	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-corporate-website-design-flat-background-banner-image_157395.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 100vh;
+    width: 100%;
+ }
+
+ .about .inner{
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	float: left;
+ 	padding: 50px;
+ 	width: 60%;
+ }
+
+ .about .inner h1{
+ 	font-size: 30px;
+ }
+
+ .about .inner p{
+ 	font-size: 24px;
+ 	line-height: 45px;
+ }
+
+ .education{
+ 	background-color: white;
+ 	display: table;
+ 	height: 100vh;
+ 	width: 100%;
+ }
+
+ .education .inner, .hobbies .inner, .contact .inner{
+ 	padding: 50px;
+ }
+
+  .education .inner h1, .hobbies .inner h1, .skills .inner h1, .contact .inner h1{
+ 	font-size: 30px;
+ }
+
+  .education .inner div, .hobbies .inner div, .skills .inner div{
+ 	width: 30%;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	float: left;
+ 	text-align: center;
+ }
+
+ .education .inner div p, .hobbies .inner div p, .skills .inner div ul li, .contact .inner div p{
+ 	font-size: 20px;
+ 	font-weight: bolder;
+ }
+.education .inner div img, .hobbies .inner div img{
+ 	height: 200px;
+ 	width: auto;
+ }
+
+ .hobbies, .contact, .skills{
+	display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+.skills{
+	background-image: url("https://www.keendevelopers.com/wp-content/uploads/2019/04/light_background.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills .inner{
+	padding: 50px;
+	
+}	
+
+.skills .inner div ul li{
+	list-style-type: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact{
+	background-color: #a8df65;
+}
+
+.contact .inner{
+	text-align: center;
+}
+
+@media(min-width: 320px) and (max-width: 374px){
+	.contact .inner, .skills .inner, .education .inner{
+		padding: 10px;
+	}
+
+	.contact .inner h1{
+		font-size: 26px;
+	}
+	.contact .inner div p{
+		font-size: 18px;
+	}
+	nav{
+		height: 80px;
+	}
+	.home .inner img{
+		padding-top: 140px;
+		margin-top: 25px;
+	}
+	nav ul li{
+	padding-left: 25px;
+    }
+    .home .inner h1, .about .inner h1, .education .inner h1, .hobbies .inner h1, .skills .inner h1, .contact .inner h1{
+		font-size: 24px;
+	}
+
+	.eduaction .inner div h2, .education .inner div p, .hobbies .inner div p, .skills .inner div ul li, .contact .inner div p{
+		font-size: 18px;
+	}
+    
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+
+	.contact .inner, .skills .inner{
+		padding: 30px;
+	}
+	nav ul li{
+	padding-left: 45px;
+    }
+
+    nav{
+		height: 80px;
+	}
+
+	.home .inner img{
+		padding-top: 140px;
+		margin-top: 25px;
+	}
+
+}
+
+@media(min-width:425px) and (max-width: 767px){
+     nav{
+		height: 60px;
+	}
+
+	nav ul li{
+	padding-left: 25px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px){
+
+	.home .inner img{
+		padding-top: 80px;
+	}
+
+	.about .inner{
+		width: 80%;
+	}
+
+	.about .inner p{
+		font-size: 20px;
+	}
+
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+		width: 100%;
+		border-bottom: 3px solid;
+		margin-left: 0px;
+	}
+
+	.skills .inner div ul li{
+		padding-left: 0px;
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+		width: 100%;
+		border-bottom: 3px solid;
+		margin-left: 0px;
+	}
+
+	nav ul{
+         float: left;
+         margin-left: 65px;
+	}
+
+	.home .inner img{
+		padding-top: 100px;
+	}
+
+	.about .inner {
+		width: 85%;
+	}
+
+}
+
+@media(min-width: 1024px) and (max-width: 1439px){
+
+       .home .inner img{
+		padding-top: 100px;
+	}
+
+     #about{
+     	background: rgb(44,156,240)!important;
+     }
+
+	.about .inner {
+		width: 85%;
+	}
+
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+ 	    margin-left: 10px;
+ 	    margin-right: 10px;
+	}
+
+	}
+
+	@media(min-width: 1440px) {
+       .home .inner img{
+		  padding-top: 100px;
+		  width: 300px;
+	    }
+	    .home .inner h1, .about .inner h1, .education .inner h1, .skills .inner h1, .hobbies .inner h1, .contact .inner h1{
+	    	font-size: 48px;
+	    }
+
+	    .about .inner p, .education .inner div h2, .education .inner div p, .hobbies .inner div p, .skills .inner div ul li, .contact .inner div p{
+	    	font-size: 30px;
+	    }
+
+	    .about .inner{
+	    	width: 90%;
+	    }
+	    .about .inner p{
+	    	line-height: 60px;
+	    }
+
+	    nav ul li{
+	    	font-size: 25px;
+	    }
+	}
+
+	@media(min-width: 2560px) {
+
+		nav{
+			height: 5%;
+		}
+
+       nav ul li{
+       	font-size: 45px;
+       }
+
+       .home .inner h1, .education .inner h1, .hobbies .inner h1, .skills .inner h1, .contact .inner h1{
+       	font-size: 70px;
+       }
+
+       .home .inner img{
+		  width: 500px;
+	    }
+	    .about .inner{
+	    	width: 85%;
+	    }
+	    .about .inner  h1{
+	    	font-size: 60px;
+	    }
+	    .about .inner p{
+	    	font-size: 50px;
+	    	line-height: 75px;
+	    }
+        .education .inner div p, .education .inner div h2, .hobbies .inner div p, .skills .inner div ul li, .contact .inner div p{
+ 	        font-size: 60px;
+        }
+	}
